@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Nexusnobg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .nexus-logo {
+            max-width: 150px;
+            margin-right: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 0;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8), #000);
+        }
+
+        .about-content {
+            max-width: 800px; /* Limit the width for better readability */
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #39ff14;
+            text-shadow: 0 0 10px #39ff14;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #00ffff;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            margin: 30px 0 10px;
+            color: #39ff14;
+        }
+
+        .about-content ul {
+            list-style: none;
+            padding: 0;
+            text-align: left; /* Align list items to the left */
+        }
+
+        .about-content ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .about-content ul li::before {
+            content: '✔'; /* Use a checkmark for list items */
+            color: #39ff14;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="Nexus.png" alt="Nexus Logo" class="nexus-logo">
+                <h1 class="logo-text">N£⦻u$</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Nexus</h2>
+                <p>
+                    Nexus is a collective of skilled cybersecurity professionals and ethical hackers, standing at the intersection of white hat and grey hat hacking. Our goal is to push the boundaries of security and code.
+                </p>
+                <p>
+                    Our mission is to protect and strengthen the online presence of businesses, individuals, and communities. With years of experience in vulnerability testing, network security, and penetration testing, we are dedicated to safeguarding against the growing threats of the digital age.
+                </p>
+                <p>
+                    Whether designing state-of-the-art websites, writing custom scripts, or retrieving information, Nexus handles all your coding and security needs with precision. Occasionally, we also explore creative automations, like our innovative "iReadyAuto."
+                </p>
+                <h3>Why Choose Nexus?</h3>
+                <ul>
+                    <li>Expertise in multiple programming languages</li>
+                    <li>Versatile coding skills, from websites to scripts</li>
+                    <li>Custom solutions tailored to your unique needs</li>
+                    <li>Trusted by clients across various industries</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
