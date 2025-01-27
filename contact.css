@@ -1,0 +1,124 @@
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8), #000000), url('cubes.png') repeat;
+    height: 100vh;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-info {
+    color: #00ffff;
+    font-size: 1.2rem;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: #39ff14;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info ul li a:hover {
+    color: #39ff14;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #39ff14;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ffff;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #39ff14;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    background-color: #39ff14;
+    color: #000;
+    border: 2px solid #39ff14;
+    text-shadow: 0 0 10px #000;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    color: #39ff14;
+}
+
+#form-message {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    /* Add a text shadow for neon effect */
+    text-shadow: 0 0 5px #00ff08, 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+    }
+}
+
+/* Add the flicker effect to messages */
+.flicker {
+    animation: flicker 1.5s infinite alternate;
+}

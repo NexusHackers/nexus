@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - iReadyAI</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="text-container">
+    <h1>Thank You for Downloading iReadyAI!</h1>
+    <p>Your download for Windows has started. If it doesn't begin automatically, <a href="https://drive.google.com/uc?export=download&id=1HogheDTSJXp278sdahV7dwlXPBZuxztx" class="download-link">click here</a>.</p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="#0078d7" d="m3.001 5.479l7.377-1.016v7.127H3zm0 13.042l7.377 1.017v-7.04H3zm8.188 1.125L21.001 21v-8.502h-9.812zm0-15.292v7.236h9.812V3z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h2>Next Steps:</h2>
+    <ul>
+      <li>Locate the downloaded file in your "Downloads" folder.</li>
+      <li>Double-click the file to start the installation process.</li>
+      <li>Follow the on-screen instructions to complete the installation.</li>
+      <li>If you have issues downloading the program, exclude the program from your antivirus first, if the issue keeps persisting, please contact iReadyAI support.</li>
+    </ul>
+  </div>
+
+  <script src="scripts/app.js"></script>
+  <script type="text/javascript" src="tilt.js"></script>
+</body>
+</html>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("space.jpg");
+  background-size: cover;
+  font-family: playfair display;
+}
+
+.text-container {
+  margin-bottom: 2rem;
+  z-index: 998;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+p .download-link {
+  color: #0078d7;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+}
+
+.icon svg {
+  width: 90%;
+  height: 90%;
+}
+
+.instructions {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.instructions h2 {
+  font-size: 2rem;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instructions li {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: radial-gradient(circle, #000428, #000000);
+}
+</style>
+
+<script>
+  // Automatically trigger download when the page loads
+  window.onload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1HogheDTSJXp278sdahV7dwlXPBZuxztx'; // Replace with actual download URL
+    downloadLink.download = 'https://drive.google.com/uc?export=download&id=1HogheDTSJXp278sdahV7dwlXPBZuxztx';
+    downloadLink.click();
+  };
+</script>
+

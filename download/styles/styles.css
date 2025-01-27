@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("space.jpg");
+  background-size: cover;
+  font-family: playfair display;
+}
+
+.text-container {
+  margin-bottom: 2rem; /* Space between text and icons */
+  z-index: 998; /* Ensure text is above the background */
+  width: 100%;
+  text-align: center;
+  position: absolute; /* or 'fixed' */
+  top: 0;  /* Align to the top of the page */
+  left: 0; /* Align to the left */
+  width: 100%; /* Make sure it spans the entire width of the page */
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem; /* Space between the icons */
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px; /* Icon container size */
+  height: 180px; /* Icon container size */
+  transition: transform 0.3s ease;
+  border-radius: 20%;
+}
+
+.icon svg {
+  width: 90%; /* Default scaling for all icons */
+  height: 90%;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Grow on hover */
+}
+
+.windows svg path {
+  fill: #0078d7; /* Blue for Windows icon */
+}
+
+.mac svg path {
+  fill: #ffffff; /* Silver for Mac icon */
+}
+
+/* Floating Stars */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite, move-stars 20s linear infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+      opacity: 0.5;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+@keyframes move-stars {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(-200%);
+  }
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: radial-gradient(circle, #000428, #000000);
+}
